@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: darkgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+            border-radius: 0px 20px;
+            /*
+            border-top-left-radius: 0px;
+            border-top-right-radius: 21px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 21px;
+            */
+            box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.473);
+        }
+
+        header>h1 {
+            text-align: center;
+        }
+
+        header > h2 {
+            text-align: center;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+            border-radius: 0px 20px;
+            /*
+            border-top-left-radius: 21px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 21px;
+            border-bottom-left-radius: 0px;
+            
+            /* border-radius: 4px; para arredondar */
+
+            box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.473);
+        }
+
+        footer {
+            background-color: gray;
+            color: greenyellow;
+            text-align: center;
+            font-size: 1.5em;
+            padding :5px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: gray;
+            padding: 20px;
+            font-size: 2em;
+            /*box-shadow: inset 1px 1px 1px 2px black;*/
+            box-shadow: 5px 3px 8px 1px rgba(0, 0, 0, 0.459);
+
+            /*inset para usar na parte de dentro*/
+        }
+
+        h1 {
+            box-shadow: 5px 3px 8px 1px rgba(0, 0, 0, 0.459);
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: red;
+            font-weight: lighter;
+            margin-right: 15px;
+
+        }
+        nav> p {
+            text-align: center;
+            padding: 10px;
+            color: black;
+            background-color: white;
+            font-size: 0.5em;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            padding: 5px;
+            border: 15px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site com Grouping Tags</h1>
+        <nav>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores accusamus fugiat qui perspiciatis! Quae
+                qui aut unde repellendus autem sint, quisquam, perferendis dolores maiores ratione error quibusdam
+                perspiciatis similique aperiam?</p>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+        <h2>Como cheguei aqui</h2>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>KEVIN O MAIS BRABO</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt incidunt nostrum quis distinctio
+                    ab. Hic, nihil, eligendi numquam, asperiores a explicabo ipsum nulla repellat consectetur aperiam
+                    recusandae ipsa optio repellendus.</p>
+                <aside>
+                    <p>Artigo escrito por mim</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Brabo de Piri</p>
+    </footer>
+    <br>
+    <div id="bola"></div>
+</body>
+
+</html>

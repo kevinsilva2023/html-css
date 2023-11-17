@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = cildren
+        */
+
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        a {
+            color:black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+        .especial::before{
+            content: '↠ ' ;
+        }
+        .especial::after {
+            content:  ' ↞';
+            font-weight: normal;
+        }
+        .especial {
+            background-color: rgba(255, 0, 0, 0.232);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="pseudoclasse.html">Voltar para página anterior</a></p>
+    <h1>Personalizado Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf" class="especial" target="_blank">github</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/">youtube</a></li>
+        <li><a href="https://www.google.com/search?q=tradutor&rlz=1C1ONGR_pt-PTBR1070BR1070&oq=tra&gs_lcrp=EgZjaHJvbWUqCwgAEEUYJxg7GIoFMgsIABBFGCcYOxiKBTIPCAEQRRg5GIMBGLEDGIAEMgYIAhBFGDsyBggDECMYJzIGCAQQRRg9MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEHODAwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8" class="especial">google</a></li>
+    </ul>
+</body>
+</html>

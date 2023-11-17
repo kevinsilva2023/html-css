@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em dispositivos diferentes para ver a diferença das imagnes usando a tag picture</p>
+<img src="" alt="">
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/FotoP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/FotoM.png" type="image/png">
+        <img src="imagens/FotoG.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender reproduzir audios em HTML5</p>
+    <h2>Primeira Opção</h2>
+    <p>audio src= "o audio" controls autoplay</p>
+    <audio src="midia/lestgocortada.mp3" play controls></audio>
+    <!--MP3 WVW OGG-->
+    <h2>Segunda opção</h2>
+    <p>Audio<br>
+        source src="o audio" type "os tipos de midias types" para MP3 por exemplo, usar o type="audio/mpeg". Outro ponto importante, informar o preload. <br>
+        Ex:</p>
+    <audio preload="metadata" play controls>
+        <source src="midia/lestgocortada.mp3" type="audio/mpeg">
+        </audio>
+        <p>Infelizmente seu navegador não consegue reproduzir o audio. <a href="midia/lestgocortada.mp3">Clique aqui para baixar o aúdio</a></p>
+    <hr>
+    <h2>PRELOADS</h2>
+    <p><abbr title="O site só irá terminar de carregar quando o audio for carregado por completo">auto</abbr></p>
+    <p><abbr title="Só irá carregar as informações necessarias para o audio, tipo: duração,  nome e etc">metadata</abbr></p>
+    <p><abbr title="Só irá carregar quando o usuário der play">none</abbr></p>
+    <hr><p>Caso tenha dúvidas, acessar o <a href="https://www.youtube.com/watch?v=cAgkwPWE4hU&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=32" target="_blank" rel="external">video explicativo</a> "ex11b"</p>
+    <!--HandBrake para converter videos-->
+</body>
+</html>

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to left,#75B8BF,#DAEDE2,#daede2df,#daede2,#75B8BF); 
+    width: 600px; /* width= largura*/
+    padding: 150px; /* "tamanho do conteudo"*/
+    margin: auto;  /*alinhamento do conteudo*/
+    border-radius: 10px; /* arredondar borda*/
+    box-shadow: 7px 7px 25px #2c3359d3; /* sombra: 0px para direita;
+            0px para baixo;
+            0px para espalhar;
+            e por fim a cor;*/
+}
+
+h1 {
+    text-align: center;
+    color: #2c3359c9; /* color = cor da fonte*/
+    text-shadow: 1px 1px 1px #DAEDE2; /* sombra do texto*/
+}
+h2 {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+div {
+    background-color: darkgray;
+    color: white;
+    height: 200px;
+    width: 1000x;
+    text-align: center;
+    border: 2px solid black;
+}
+
+div:hover {
+    background-color: red;
+    font-size: 5em;
+    font-family: 'Courier New', Courier, monospace;
+}

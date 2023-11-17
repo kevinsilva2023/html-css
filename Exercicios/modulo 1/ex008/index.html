@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ArTec.ico" type="image/x-icon">
+    <title>Formatação de Texto</title>
+    <style>
+        mark {
+            background-color: rgb(153, 153, 229);
+        } 
+    </style>
+</head>
+<body>
+   <h1>Principais Formatações</h1> <hr>
+   <h2>Negrito/ Destaque</h2>
+   <p>Nesta Frase temos um <b>termo em negrito </b>usando a tag "b" (não semântica).</p>
+   <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica)</p><hr>
+   <h2>Itálico/ Ênfase</h2>
+   <p>Nesta Frase, <i>temos um termo em italico</i> usando a tag I (não semântica)</p>
+   <!-- Para colocar a TAG depois de escrever a frase ou palavras, basta apenas, selecionar a frase desejada, apertar CRTL + SHIFT + P e selecionar ">Emmet: Envelope com abreviatura em seguida digitar a TAG"-->
+   <p>Nesta frase, <EM>temos um termo em ênfase</EM>  usando a tag EM (semântica)</p><hr>
+    <h2>Marca Texto</h2>
+    <p>Nesta frase, <mark>temos um termo em marcação</mark> usando a tag MARK</p>
+    <!--A TAG "Style" é CSS-->
+    <p>E no outro parágrafo temos <mark style="background-color: cyan;"> outro texto marcado</mark></p>
+    <p><mark>Agora aepnas um outro teste para saber se está funcionando perfeitamente</mark></p>
+    <p>Estamos criando um texto grande e <SMALL>um texto pequeno nesse parágrafo</SMALL>.</p><hr>
+    <!-- Para aumentar o texto usamos o CSS, porém para o texto pequeno ainda podemos usar o SMALL-->
+    <h2>Texto Deletado</h2>
+    <p><del>Podemos Marcar um texto como excluído para indicar que ele deve ser lido, mas não conseiderado</del></p>
+    <p>Para incluir a marcação de deletado é usado a tag DEL</p><hr>
+    <h2>Texto Inclído</h2>
+    <p><ins>Podemos marcar um texto como inserido para dar uma ênfase e indicar que ele foi adicionado depois</ins></p>
+    <p>Para incluir a marcação de deletado é usado a tag INS</p>
+    <p>Existe também o <u>sublinhado</u> com a tag U (não semântica)</p><hr>
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir codigos ou até mesmo numeros "superiores", por exemplo:</p>
+    <p>X<sup>20</sup> (X elevado à 20)</p>
+    <p>Para isso vamos usar a tag SUP</p><hr>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir codigos ou até mesmo numeros "inferiores", por exemplo:</p>
+    <p>H<SUB>2</SUB>0 (H20)</p>
+    <p>Para isso vamos usar a tag SUB</p><hr>
+    <h3>
+        <strong>Semântica: </strong>tem siginificado <br>
+        <strong>Não Semântica:</strong> não tem significado (não tem significado? É forma! é forma? é CSS) <hr>
+    </h3>
+</body>
+</html>
