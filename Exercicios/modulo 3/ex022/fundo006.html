@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url(img/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        main {
+            background-color: white;
+            width: 480px;
+            padding: 16px;
+            margin: auto;
+            line-height: 20px;
+            border: 2px dashed black;
+            border-radius: 15px;
+        }
+        .obs {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        
+        <p>Como evitar a quebra de imagem?</p>
+        <code>
+            <pre>
+                height: 100vh;
+                background-position: center top;
+                background-repeat: no-repeat;
+            </pre>
+        </code>
+        <p>Porém, essa opção é pessima, pq achata a imagem</p>
+        <p>Então para deixar mais armonico usando o &lt;<strong>cover</strong>&gt;. A imagem se ajusta sem achatar ou expandir, conforme a necessecidade da página. Ex:</p>
+        <code>
+            <pre>
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size:cover;
+                height: 100vh;
+            </pre>
+        </code>
+        <h2 class="obs">Observação importante</h2>
+        <p class="obs">Sempre que tiver uma imagem de fundo, sempre colocar uma color no fundo também, por que se caso o servidor estiver lendo, a cor sobe antes da foto</p>
+        <code>
+            <pre>
+                background-color: black;
+                background-image: url(img/wallpaper002.jpg);
+            </pre>
+        </code>
+    </main>
+</body>
+</html>
