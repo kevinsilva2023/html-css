@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+* {
+    color: white;
+    text-align: center;
+
+}
+body {
+    background-color: black;
+    margin: 0;
+}
+.foto1 > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid lightgray;
+    padding: 5px;
+    margin-top: 20px;
+}
+.foto1 {
+    text-align: center;
+}
+.title {
+    margin: 20px;
+}
+main {
+    min-width: 300px;
+    max-width: 700px;
+    margin: auto;
+    padding: 0px 35px 0px 35px;
+}
+main h1 {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+main p {
+
+    font-size: 1.1em;
+    text-indent: 30px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.botoes {
+    background-color: lightgray;
+    color: black;
+    list-style: none;
+    margin: 7px;
+    padding: 8px 0px 8px 0px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 2s;
+    text-indent: 0;
+}
+.botoes:hover {
+    background-color: black;
+    font-size: 1.1em;
+    color: white;
+
+
+}
+.contatos {
+    padding-top: 20px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 0.5px;
+    font-weight: bold;
+}
+.link {
+    text-decoration: none;
+    color: black;
+
+}
+
+.link:hover {
+    color: white;
+    text-decoration: underline;
+}

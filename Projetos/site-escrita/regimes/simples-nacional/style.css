@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@import url(#);
+
+* {
+    margin: 0;
+}
+
+:root {
+    --cor0:;
+    --cor1:;
+    --cor2:;
+    --cor3:;
+    --cor4:#003459;
+    --cor5:#00171F;
+
+    --fonte-padrao:;
+    --fonte-destaque:;
+    --fonte-h:;
+}
+
+body {
+
+}
+
+header {
+    background-color: var(--cor4);
+    min-height: 200px;
+    padding: 15px 10px;
+}
+
+a.voltar {
+    text-decoration: none;
+    color: var(--cor5);
+    background-color: lightblue;
+    border-radius: 7px;
+    padding: 8px;
+    margin-top: 5px;
+}
+a.voltar::before {
+    content: \&#xf122;
+}
+a:hover {
+    background-color: #003459;
+    color: white;
+    text-decoration: underline;
+    transition-duration: 2.5s;
+}
+nav {
+
+}
+
+main {
+
+}
+
+footer {
+    background-color: var(--cor4);
+    min-height: 100px;
+    padding-top: 1;
+}
