@@ -6,16 +6,24 @@
     <title>Document</title>
     <style>
         body {
+            /*
             height: 100vh;
             background-color: black;
             background-image: url(img/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size:cover;
+            background-attachment: fixed; /*a imagem não vai rolar com o conteudo*/
+
+            /* Shorthands - backgroud
+                color > image > position > repeat > [size] > attachment
+            */
+            background: black url(img/wallpaper002.jpg) center center no-repeat fixed; /*o cover não funciona*/
+            background-size: cover;
         }
         main {
             background-color: white;
-            width: 480px;
+            max-width: 600px;
             padding: 16px;
             margin: auto;
             line-height: 20px;
@@ -29,16 +37,7 @@
 </head>
 <body>
     <main>
-        <h1>Teste Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
-        
-        <p>Como evitar a quebra de imagem?</p>
+    <h1>Como evitar a quebra de imagem?</h1>
         <code>
             <pre>
                 height: 100vh;
@@ -47,13 +46,14 @@
             </pre>
         </code>
         <p>Porém, essa opção é pessima, pq achata a imagem</p>
-        <p>Então para deixar mais armonico usando o &lt;<strong>cover</strong>&gt;. A imagem se ajusta sem achatar ou expandir, conforme a necessecidade da página. Ex:</p>
+        <p>Então para deixar mais armonico usando o &lt;<strong>cover</strong>&gt; no size. A imagem se ajusta sem achatar ou expandir, conforme a necessecidade da página. Ex:</p>
         <code>
             <pre>
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size:cover;
                 height: 100vh;
+                background-attachment: fixed;
             </pre>
         </code>
         <h2 class="obs">Observação importante</h2>
@@ -64,6 +64,18 @@
                 background-image: url(img/wallpaper002.jpg);
             </pre>
         </code>
+        <h1>Teste de Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis aliquam sint beatae tempora recusandae aperiam esse debitis, ullam harum, dicta accusamus iusto, saepe mollitia? Rerum laboriosam repellat modi inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet minima ad quod illum, rerum aliquid hic temporibus cumque veritatis maxime velit mollitia, dolore harum ullam autem dolor quos eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum maiores temporibus optio, sit iure natus a ullam. Et nam inventore, ipsa distinctio quos asperiores officiis. Quis cum aspernatur est.</p>
     </main>
 </body>
 </html>
