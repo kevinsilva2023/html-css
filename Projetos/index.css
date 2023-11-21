@@ -6,9 +6,13 @@
 
 }
 body {
-    background: white url(img/wallpaper004.jpg) center top no-repeat fixed;
+    background-color: white;
+    background-image: url(img/wallpaper004.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     margin: 0;
+
 }
 .foto1 > img {
     width: 200px;
