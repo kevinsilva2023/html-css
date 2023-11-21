@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase; colorcar em letra maiuscula*/
+    font-variant: small-caps; /*todas em caps, porém as primeiras são maiores*/
+}
+header > p {
+    padding-bottom: 50px;
+}
+header a, footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header a, footer a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 40px;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.img {
+    background-color: rgb(92, 92, 92);
+    color: white;
+}
+
+
+.img > p {
+    background-color: rgb(0, 0, 0, 0.253);
+    width: 400px;
+    padding: 15px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
