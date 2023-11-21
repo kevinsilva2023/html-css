@@ -6,7 +6,8 @@
 
 }
 body {
-    background-image: url(img/wallpaper004.jpg);
+    background: white url(img/wallpaper004.jpg) center top no-repeat fixed;
+    background-size: cover;
     margin: 0;
 }
 .foto1 > img {
