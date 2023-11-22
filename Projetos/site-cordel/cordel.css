@@ -40,12 +40,21 @@ header > p {
     padding-bottom: 50px;
     font-size: 3vw;
 }
-header a, footer a {
+footer a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-header a, footer a:hover {
+footer a:hover {
+    text-decoration: underline;
+}
+.milton {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+.milton:hover{
     text-decoration: underline;
 }
 section {
