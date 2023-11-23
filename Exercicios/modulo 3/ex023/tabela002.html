@@ -7,22 +7,40 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+
+
         }
         table {
             border-collapse: collapse;
+            width: 450px;
+            margin: auto;
         }
         td, th {
             border: 1px solid black;
-            width: 200px;
-            border-collapse: collapse;
             padding: 5px;
         }  
         thead, tfoot{
             background-color: gray;
             color: white;
         }
+        tbody > tr:nth-child(odd) {
+            background-color: lightblue;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
         .num {
             text-align: right;
+        }
+        caption {
+            background-color: darkgray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
         }
     </style>
 </head>
@@ -40,11 +58,12 @@
         (THEAD E TFOOT não são "obrigatórias")
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
                 
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -158,10 +177,24 @@
         </tbody>
         <tfoot>
             <tr>
-               <th>Total de Habitantes</th> 
+               <th scope="row">Total de Habitantes</th> 
                <td><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum enim id laboriosam a magni voluptatem repellat blanditiis, iste expedita aperiam accusantium cumque tempora! Dolore amet nostrum non nobis numquam architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sint quaerat nisi nesciunt facere ipsam, aperiam nihil facilis, officiis provident rem! Praesentium repudiandae dolore asperiores adipisci quisquam! Facere, explicabo accusamus.</p>
 </body>
 </html>
