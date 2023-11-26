@@ -1,0 +1,8 @@
+@charset "UTD-8";
+
+/* Aprelho deitado (landscap)*/
+
+body {
+    background-image: url(../img/cev-landscape.jpg);
+    background-position: left bottom;
+}
