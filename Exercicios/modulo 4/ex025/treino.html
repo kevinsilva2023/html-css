@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+        text-align: center;
+        }
+        
+        ::placeholder {
+            text-align: center;
+        }
+
+    </style>
+<body>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iname">Nome:</label>
+                <input type="text" name="name" id="iname" placeholder="Nome Completo" size="40">
+            </p>
+            <p>
+                <label for="icpf">CPF/CNPJ:</label>
+                <input type="number" name="cpf" id="icpf" placeholder="00.000.000-00" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" size="">
+            </p>
+            <p>
+                <label for="imail">Email: </label>
+                <input type="email" name="mail" id="imail" size="22" placeholder="exemplo@exemplo.com" required autocomplete="email">
+            </p>
+            <p>
+                <label for="ifone">Telefone: </label>
+                <input type="tel" name="fone" id="ifone" placeholder="(11) 9 9999-9999" required autocomplete="tel"
+                pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Forma de Pagamento</legend>
+            <p>
+                <input type="radio" name="pag" id="ivis"> <label for="ivis">À vista</label>
+                <input type="radio" name="pag" id="ipar"> <label for="ipar">Parcelado</label>
+                <input type="radio" name="pag" id="ipix"> <label for="ipix">Pix</label>
+                <input type="radio" name="pag" id="ibol"> <label for="ibol">Boleto</label>
+            </p>
+            <p><label for="iparc">Parcelamento</label>
+                <select name="parc" id="ipac">
+                    <option value="1x">1x Sem Juros</option>
+                    <option value="2x">2x Sem Juros</option>
+                    <option value="3x">3x Sem Juros</option>
+                    <option value="4x">4x Sem Juros</option>
+                    <option value="5x">5x Sem Juros</option>
+                    <option value="6x">6x Sem Juros</option>
+                    <option value="7x">7x Sem Juros</option>
+                    <option value="8x">8x Sem Juros</option>
+                    <option value="9x">9x Com Juros</option>
+                    <option value="10x">10x Com Juros</option>
+                    <option value="11x">11x Com Juros</option>
+                    <option value="12x">12x Com Juros</option>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

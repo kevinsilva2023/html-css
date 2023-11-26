@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email e Telefone</title>
+    <style>
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Melhorando os Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iname">Nome:</label>
+                <input type="text" name="name" id="iname" required autocomplete="name" minlength="3" maxlength="20" placeholder="Seu Nome">
+            </p>
+            
+            <p>
+                <label for="imail">Email: </label>
+                <input type="email" name="mail" id="imail" size="22" placeholder="exemplo@exemplo.com" required autocomplete="email">
+            </p>
+            <p>
+                <label for="ifone">Telefone: </label>
+                <input type="tel" name="fone" id="ifone" placeholder="(11) 9 9999-9999" required autocomplete="tel"
+                pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Conta Bancária</legend>
+            <p></p>
+            <p></p>
+            <p></p>
+        </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    </form>
+</body>
+</html>
