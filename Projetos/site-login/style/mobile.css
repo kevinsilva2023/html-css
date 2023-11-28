@@ -35,8 +35,8 @@ main {
     transform: translate(-50%, -50%);
 
     background-color: white;
-    width: 270px;
-    height: 500px;
+    width: 280px;
+    height: 600px;
     border-radius: 15px;
     
     overflow: hidden;
@@ -68,7 +68,6 @@ main {
  
 
 }
-
 .campo {
     background-color: #b890d3;
      display: block;
